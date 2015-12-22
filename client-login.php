@@ -20,7 +20,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 require_once( 'inc/vc-plugin-updater.php' );
 if ( is_admin() ) {
-    new VC_Plugin_Updater( __FILE__, 'mmcnew', 'synergy-hcm-client-login' );
+    new Login_Plugin_Updater( __FILE__, 'mmcnew', 'synergy-hcm-client-login' );
 }
 
 
