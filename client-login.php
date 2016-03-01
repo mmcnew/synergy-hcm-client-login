@@ -3,7 +3,7 @@
   Plugin Name: Synergy HCM Client Login Shortcode
   Plugin URI: http://www.visceralconcepts.com
   Description: A shortcode to add the Client Login form provided by Synergy HCM into a WordPress site using only a shortcode.
-  Version: 1.0
+  Version: 1.1
   Author: Visceral Concepts
   Author URI: http://www.visceralconcepts.com
   License: GPLv3 or Later
