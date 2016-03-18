@@ -3,7 +3,7 @@
   Plugin Name: Synergy HCM Client Login Shortcode
   Plugin URI: http://www.visceralconcepts.com
   Description: A shortcode to add the Client Login form provided by Synergy HCM into a WordPress site using only a shortcode.
-  Version: 1.1
+  Version: 1.3
   Author: Visceral Concepts
   Author URI: http://www.visceralconcepts.com
   License: GPLv3 or Later
@@ -31,15 +31,16 @@ function login_scripts() {
 
 	wp_register_style( 'login-css', plugin_dir_url(__FILE__) . 'css/login-style.css' );
 	wp_enqueue_style( 'login-css' );
+	wp_register_script ( 'login-js', 'http://www.saashr.com/ta/js/loginmsg.js' );
+	wp_enqueue_script ( 'login-js' );
 
 }
 
 // Shortcode Construct
 function hcm_login( $atts ) {
     return "<div id='LoginArea'>
-    			<form action='https://secure.saashr.com/ta/Synergy.login' method='post'>
+    			<form action='https://secure.yourpayrollhr.com/ta/Default.login?rnd=FUS' method='post'>
 					<font color=red>
-						<script src='http://www.saashr.com/ta/js/loginmsg.js'></script>
 					</font>
 					<input type='text' name='Username' class='input' placeholder='Username' holder='Username' id='username'/>
 					<input type='password' name='Password' class='input' placeholder='Password' holder='Password' id='password'/>
